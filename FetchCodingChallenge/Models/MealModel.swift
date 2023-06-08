@@ -16,19 +16,12 @@
 
 import Foundation
 
-class Meal: NSObject, Identifiable {
-    var id: String
-    var mealName: String
-    var mealImage: String
-    var instructions: String
-    var ingredients = [[String]]()
-    
-    // Contructor function that intializes the id, mealName, instructions, and ingredients properties
-    init(id: String, mealName: String, mealImage: String, instructions: String, ingredients: [[String]] = [[String]]()) {
-        self.id = id
-        self.mealName = mealName
-        self.mealImage = mealImage
-        self.instructions = instructions
-        self.ingredients = ingredients
-    }
+struct Meals: Codable {
+    let meals: [Meal]
+}
+
+struct Meal: Codable {
+    let strMeal: String
+    let strMealThumb: String
+    let idMeal: String
 }
