@@ -97,9 +97,9 @@
 		839078572A315CBA0037001D /* FetchCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				839078872A317A390037001D /* Views */,
 				839078842A316D7F0037001D /* Models */,
 				839078582A315CBA0037001D /* FetchCodingChallengeApp.swift */,
-				8390785A2A315CBA0037001D /* ContentView.swift */,
 				8390785C2A315CBB0037001D /* Assets.xcassets */,
 				8390785E2A315CBB0037001D /* FetchCodingChallenge.entitlements */,
 				8390785F2A315CBB0037001D /* Preview Content */,
@@ -138,6 +138,14 @@
 				839078852A316D900037001D /* MealModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		839078872A317A390037001D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8390785A2A315CBA0037001D /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
