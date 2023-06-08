@@ -10,18 +10,25 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
-    var mealService: MealDBService = MealDBService()
+    @StateObject private var viewModel = ContentViewModel()
     
     var body: some View {
-        VStack {
-            Button {
-                Task {
-                    await print(mealService.getDessert())
-                }
-            } label: {
-                Text("Fetch Joke")
+        VStack{
+            ScrollView{
+                //For each Meal inside meal data, display its thumbnail, and title
+                ForEach(viewModel.mealData.meals, content: { meal in
+                    HStack{
+                        AsyncImage(url: URL(string: meal.strMealThumb), scale: 5)
+                        Spacer()
+                        Text(meal.strMeal)
+                        Spacer()
+                    }.onTapGesture {
+                        print(meal)
+                    }
+                })
             }
         }
     }
