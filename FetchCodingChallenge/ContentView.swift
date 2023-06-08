@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+    var testMeal = Meal(mealName: "Timbits", instructions: "Make Timbits", ingredients: [["Dough", "2 pounds"]])
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text(testMeal.mealName)
+            Text(testMeal.instructions)
         }
-        .padding()
     }
 }
 

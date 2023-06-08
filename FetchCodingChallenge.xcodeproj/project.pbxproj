@@ -14,6 +14,7 @@
 		8390786B2A315CBB0037001D /* FetchCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8390786A2A315CBB0037001D /* FetchCodingChallengeTests.swift */; };
 		839078752A315CBB0037001D /* FetchCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839078742A315CBB0037001D /* FetchCodingChallengeUITests.swift */; };
 		839078772A315CBB0037001D /* FetchCodingChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839078762A315CBB0037001D /* FetchCodingChallengeUITestsLaunchTests.swift */; };
+		839078862A316D900037001D /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839078852A316D900037001D /* MealModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		839078702A315CBB0037001D /* FetchCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FetchCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839078742A315CBB0037001D /* FetchCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCodingChallengeUITests.swift; sourceTree = "<group>"; };
 		839078762A315CBB0037001D /* FetchCodingChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCodingChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		839078852A316D900037001D /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		839078572A315CBA0037001D /* FetchCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				839078842A316D7F0037001D /* Models */,
 				839078582A315CBA0037001D /* FetchCodingChallengeApp.swift */,
 				8390785A2A315CBA0037001D /* ContentView.swift */,
 				8390785C2A315CBB0037001D /* Assets.xcassets */,
@@ -127,6 +130,14 @@
 				839078762A315CBB0037001D /* FetchCodingChallengeUITestsLaunchTests.swift */,
 			);
 			path = FetchCodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		839078842A316D7F0037001D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				839078852A316D900037001D /* MealModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8390785B2A315CBA0037001D /* ContentView.swift in Sources */,
+				839078862A316D900037001D /* MealModel.swift in Sources */,
 				839078592A315CBA0037001D /* FetchCodingChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
