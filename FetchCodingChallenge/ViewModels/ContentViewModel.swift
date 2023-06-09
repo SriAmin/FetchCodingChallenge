@@ -3,7 +3,7 @@
 //  FetchCodingChallenge
 //
 //  ContentViewModel is the controller class that handles the link between the
-//  View and the Model. This also has the MealDBService that allows the ViewModel
+//  ContentView and the MealModel. This also has the MealDBService that allows the ViewModel
 //  to communicate with MealDB API, grab all the Desserts, and send them to the View
 //
 //  mealDBService | Type: MealDBService | Service Controller that communicates with TheMealDB API
@@ -19,7 +19,6 @@ class ContentViewModel : NSObject, ObservableObject {
     
     private var mealDBService : MealDBService!
     
-    //Meal Data that gets acquired from the getDesserts() function in the Controller
     @Published private(set) var mealData : Meals! {
         didSet {
             self.bindEmployeeViewModelToController()
