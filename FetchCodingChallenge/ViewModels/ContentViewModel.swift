@@ -26,7 +26,8 @@ class ContentViewModel : NSObject, ObservableObject {
     }
     
     var bindEmployeeViewModelToController : (() -> ()) = {}
-
+    
+    // Init()
     // Intializes the ViewModel, controller field, and grab the desserts
     override init() {
         super.init()

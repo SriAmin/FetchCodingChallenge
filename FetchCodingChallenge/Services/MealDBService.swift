@@ -17,6 +17,7 @@ import Foundation
 class MealDBService : NSObject {
     var apiURL: String = "https://themealdb.com/api/json/v1/1/"
     let jsonDecoder = JSONDecoder()
+    
     override init() {
         super.init()
     }

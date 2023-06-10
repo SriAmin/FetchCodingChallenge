@@ -22,11 +22,14 @@ struct ContentView: View {
                     //For each Meal inside meal data, display its thumbnail, and title
                     ForEach(viewModel.mealData.meals, content: { meal in
                         NavigationLink(destination: MealItemView(mealId: meal.idMeal)) {
-                            HStack{
-                                AsyncImage(url: URL(string: meal.strMealThumb), scale: 5)
-                                Spacer()
-                                Text(meal.strMeal)
-                                Spacer()
+                            VStack{
+                                HStack{
+                                    AsyncImage(url: URL(string: meal.strMealThumb), scale: 5)
+                                    Spacer()
+                                    Text(meal.strMeal).bold()
+                                    Spacer()
+                                }.padding([.horizontal], 15)
+                                Divider()
                             }
                         }
                     })

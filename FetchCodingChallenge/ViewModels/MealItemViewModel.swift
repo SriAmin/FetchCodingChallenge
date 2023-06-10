@@ -29,6 +29,7 @@ class MealItemViewModel : NSObject, ObservableObject {
         super.init()
     }
     
+    // Init()
     // Intializes the ViewModel, controller field, and grabs the dessert item that has the specific mealId
     // mealId | Type: String | String that represents the specific mealId inside TheMealDB API
     init(mealId: String) {
@@ -43,7 +44,6 @@ class MealItemViewModel : NSObject, ObservableObject {
     func getDessertItem(mealId: String) {
         self.mealDBService.getDessertItem(id: mealId) { (mealData) in
             self.mealData = mealData
-            print(self.mealData as Any)
         }
     }
 }
